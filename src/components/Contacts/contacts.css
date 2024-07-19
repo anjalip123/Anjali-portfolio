@@ -1,0 +1,133 @@
+
+#contact{
+ min-height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.contact-section{
+    display: flex;
+    gap:130px;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-left h2{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 28px;
+}
+.contact-info{
+  max-width: 550px;
+  font-size: 15px;
+  line-height: 25px;
+
+}
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  align-items: start;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    width: 9rem;
+    height: 6vh;
+    padding: 0.75rem;
+    color: black;
+    margin: 1.5rem 1rem;
+  }
+  .submitBtn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .link{
+        object-fit: cover;
+        height: 3rem;
+        width: 3rem;
+        margin: 0 0.75rem;
+  }
+  .links{
+    margin-top: 1rem;
+  }
+  .message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .messageBox {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    color: white;
+    border: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 300px;
+    margin-bottom: 1.75rem;
+  }
+
+  @media screen and (max-width: 730px) {
+    .contact-section {
+      display: block;
+    }
+    .contact-right {
+      margin-top: 2rem;
+    }
+    .submitBtn {
+      margin: 1rem auto;
+    }
+    .name,
+    .email,
+    .msg {
+      max-width: 22rem;
+    }
+  }

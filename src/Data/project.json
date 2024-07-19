@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "imgSrc": "/projects/project1.png",
+      "liveUrl": "https://anjalip123.github.io/Bootstrap/"
+    },
+    {
+      "imgSrc": "/projects/project2.png",
+      "liveUrl": "https://anjalip123.github.io/TinDogWebsite/"
+    },
+    {
+      "imgSrc": "/projects/project3.png",
+      "liveUrl": "https://anjalip123.github.io/Drum-Kit/"
+    },
+    {
+      "imgSrc": "/projects/project4.png",
+      "liveUrl": "https://anjalip123.github.io/TodoListApp/"
+    },
+    {
+      "imgSrc": "/projects/project5.png",
+      "liveUrl": "https://anjalip123.github.io/passwordGenerator/"
+    },
+    {
+      "imgSrc": "/projects/project6.png",
+      "liveUrl": "https://anjalip123.github.io/Quizapp/"
+    },
+    {
+      "imgSrc": "/projects/project7.png",
+      "liveUrl": "https://anjalip123.github.io/WeatherApp/"
+    },
+    {
+      "imgSrc": "/projects/project8.png",
+      "liveUrl": "https://liveproject3.com"
+    
+    }
+  ]
+}

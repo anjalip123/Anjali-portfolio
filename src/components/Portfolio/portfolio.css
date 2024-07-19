@@ -1,0 +1,37 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.projectImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    width: 100%;
+    max-width: 65rem;
+
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the max width as needed */
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Slight zoom on hover */
+}

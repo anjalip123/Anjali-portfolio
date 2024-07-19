@@ -1,0 +1,58 @@
+.progress-bar-container {
+    width: 100vw; 
+    max-width: 40rem;   
+}
+
+.skill-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 30px;
+    width: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    transition: width 1s ease-in-out;
+}
+
+.progress-text {
+    color: black;
+    font-weight: bold;
+    padding-right: 10px; /* Adjust padding for space between text and bar */
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .progress-bar {
+        font-size: 0.8em; /* Example of scaling down font size */
+    }
+    .progress-bar-container {
+        max-width: 20rem;   
+    }
+}
+
+@media (max-width:393px) {
+    .progress-bar-container {
+        max-width: 10rem;   
+    }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1024px) {
+    .progress-text {
+        right: 20px; /* Increase distance from the end on larger screens */
+    }
+}
