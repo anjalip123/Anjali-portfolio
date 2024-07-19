@@ -21,6 +21,7 @@ const Skill = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setAnimate(true);
+                        observer.unobserve(entry.target);
                     }
                 });
             },
@@ -28,13 +29,14 @@ const Skill = () => {
                 threshold: 0.5, // Trigger when 50% of the Skills section is visible
             }
         );
-        if (skillsRef.current) {
-            observer.observe(skillsRef.current);
+        const currentSkillsRef = skillsRef.current;
+        if (currentSkillsRef) {
+            observer.observe(currentSkillsRef);
         }
            // Clean up the observer
            return () => {
-            if (skillsRef.current) {
-                observer.unobserve(skillsRef.current);
+            if (currentSkillsRef) {
+                observer.unobserve(currentSkillsRef);
             }
         };
     }, []);
